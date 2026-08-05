@@ -238,6 +238,14 @@ public class Main {
         int originalStrong = strongNumber;
         int strongSum = 0;
 
+        //7. Java program to count the digits of a given number using for loop.
+        int count=0;
+        int num = 25;
+        for (; num != 0; num = num / 10) {
+            count++;
+        }
+        System.out.println("Number of digits: " + count);
+
         for (int temp = strongNumber; temp > 0; temp = temp / 10) {
 
             int digit = temp % 10;
